@@ -1,0 +1,109 @@
+body {
+    width: 1440px;
+    height: 1024px;
+    background-color: #fcb424;
+    border: 5px solid #7f59b0;
+}
+/*HEADER*/
+.caja-header{
+    width: 100%;
+    background-color: #fcb424;
+    height: 15%;
+}
+.titulo{
+    text-align: center;
+    font-size: 60px ;
+    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Fredoka One', cursive;
+    color: #7f59b0;
+    text-shadow: 3px 3px 5px #ea4b8b;
+}
+
+
+/*MAIN*/
+
+.caja-main{
+    width: 100%;
+    height: 75%;
+    background-color: #7f59b0; 
+}
+
+.botones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-boton1{
+    margin-top: 260px;
+}
+
+.boton1{
+     width: 270px;
+     height: 80px;
+     cursor: pointer;
+     color:#ea4b8b;
+     font-size: 2rem;
+     font-family: 'Cormorant Garamond', serif;
+     font-family: 'Fredoka One', cursive;
+     background-color: wheat;
+     border-radius: 1rem;
+}
+
+.boton1:hover{
+    background-color: #fcb424;
+    color: #7f59b0;
+    border: 5px solid #7f59b0;  
+}
+
+
+
+
+/*FOOTER*/
+.caja-footer{
+    width: 100%;
+    height: 10%;
+    background-color: #fcb424;
+}
+
+.caja2-iconos {
+    display: flex;
+    flex-direction: row;
+}
+
+.nombre{
+    margin-top: 40px;
+    margin-right: 403px;
+    font-size: 15px;
+    font-style: italic;
+    font-style: bold;
+}
+
+
+.iconos{
+    margin-top: 30px;
+    display: inline-block;
+    font-size: 44px;
+    animation: float 5s ease-in-out infinite;
+}
+
+.instagram{
+    animation-delay: 1s;
+}
+.linkedin{
+    animation-delay: 2s;
+}
+
+@keyframes float{
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateY(-15px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+

@@ -1,0 +1,223 @@
+body {
+    width: 1440px;
+    height: 1024px;
+    background-color: #fcb424;
+}
+/*HEADER*/
+.caja-header{
+    width: 100%;
+    background-color: #fcb424;
+    height: 15%;
+}
+.titulo{
+    text-align: center;
+    font-size: 60px ;
+    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Fredoka One', cursive;
+    color: #7f59b0;
+    text-shadow: 3px 3px 5px #ea4b8b;
+}
+
+
+/*MAIN*/
+.caja-main{
+    width: 100%;
+    height: 75%;
+    background-color: #7f59b0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*ESTILOS AGREGAR PALABRA*/
+.label-nueva-palabra{
+    margin-left: 75%;
+    font-size: 150%;
+    height: 2rem;
+    margin-bottom: 1rem;
+    color: #fcb424;
+    font-weight: bold;
+    text-shadow: 3px 3px 5px #ea4b8b;
+    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Fredoka One', cursive;
+}
+.input-nueva-palabra{
+    margin-left: 75%;
+    width:20% ;
+    height: 4%;
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Fredoka One', cursive;
+    border-radius: 1rem;
+}
+input::placeholder{
+    font-size: 1rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Fredoka One', cursive;
+}
+.bnt-nueva-palabra{
+    margin-top: 1%;
+    margin-left: 75%;
+    width: 10%;
+    height: 5%;
+    color:#ea4b8b;
+    font-size: 1rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Fredoka One', cursive;
+    text-shadow: 3px 3px 5px #fcb424;
+    background-color: wheat;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+.bnt-nueva-palabra:hover{
+    box-shadow:5px 5px 10px #fcb424;
+}
+
+/*ESTILOS DE BOTON COMENZAR*/
+#btn-comenzar{
+    width: 25%;
+    height: 7%;
+    font-weight: bold;
+    color:#ea4b8b;
+    font-size: 2rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Fredoka One', cursive;
+    background-color: wheat;
+    border-radius: 1rem;
+}
+
+#btn-comenzar:hover{
+    box-shadow: 5px 5px 10px #ea4b8b;
+    text-shadow: 1px 1px 1px #fcb424;
+
+}
+
+/*ESTILOS PARA PARTE DE MUNIECOS Y LETRAS*/
+.munieco{   
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 40%;
+    height: 50%;
+    border: 5px solid #fcb424;
+    box-shadow: 5px 5px 10px #ea4b8b;
+}
+
+#letras-erradas{
+    font-size: 2rem;
+    color:wheat;
+}
+
+.guiones{
+    width: 60%;
+    height: 15%;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+
+/*FOOTER*/
+.caja-footer{
+    width: 100%;
+    height: 10%;
+    background-color: #fcb424;
+}
+
+.caja2-iconos {
+    display: flex;
+    flex-direction: row;
+}
+
+.nombre{
+    margin-top: 40px;
+    margin-right: 403px;
+    font-size: 15px;
+    font-style: italic;
+    font-style: bold;
+}
+
+
+.iconos{
+    margin-top: 30px;
+    display: inline-block;
+    font-size: 44px;
+    animation: float 5s ease-in-out infinite;
+}
+
+.instagram{
+    animation-delay: 1s;
+}
+.linkedin{
+    animation-delay: 2s;
+}
+
+@keyframes float{
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateY(-15px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+
+
+/*ESTILOS DEL JAVASCRIPT */
+.oculto{
+    color: transparent;
+}
+.mostrar{
+    color: black;
+}
+.letra{
+    text-align: center;
+    position: relative;
+    margin: 3%;
+    font-size: 3rem;
+}
+.letra::after{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    background-color: black;
+    min-width: 12px;
+}
+
+.novisible{
+    display: none;
+}
+
+.mostrado{
+    display: block;
+}
+
+/*ESTILOS PARA SWEET ALERT*/
+.swal-modal {
+    width: 40rem;
+    text-align: center;
+    background-color: #7f59b0;
+    border: 1rem solid #fcb424;
+  }
+
+  .swal-title {
+    font-size: 3rem;
+  }
+
+  .swal-text {
+    font-size: 2rem;
+    text-align: center;
+    color: wheat;
+  }
+
+  .swal-button {
+    border-radius: 2px;
+    background-color: #ea4b8b;
+    font-size: 1rem;
+    border: 2px solid #fcb424;
+  }
+

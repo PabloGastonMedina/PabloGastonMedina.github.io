@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego del Horcado</title>
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300;1,500&family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesJuego.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    
+   <header class="caja-header">
+           <a href="https://www.aluracursos.com/" target="_blank">
+               <img src="/Logo.png" alt="Logo Alura">
+           </a>
+
+           <h1 class="titulo">AHORCADO</h1>
+   </header>
+
+   <main class="caja-main">
+    
+        <canvas class="munieco" id="munieco" ></canvas>
+    
+        <div id="letras-erradas"></div>
+         
+        <div class="guiones" id="guiones"></div>
+    
+        <input type="submit" name="comenzar" id="btn-comenzar" value="Comenzar">
+
+
+
+        <label for="nueva-palabra" class="label-nueva-palabra">Agrega nueva palabra</label>
+        <input type="text" name="nueva-palabra" id="nueva-palabra" class="input-nueva-palabra" placeholder="Letras en mayusculas" maxlength="8">
+
+
+        <button class="bnt-nueva-palabra" onclick="agregarPalabra()">Agregar palabra</button>
+   </main>
+
+   <footer class="caja-footer">
+   
+        <div class="caja2-iconos">
+            <p class="nombre">&#169; Pagina creada por Pablo Gaston Medina</p>
+            <a href="https://github.com/PabloGastonMedina" target="_blank">
+                <li class="git iconos">
+                    <img src="/GIT.png" alt="logo git" width="40px">
+                </li>
+            </a>
+            <a href="https://www.instagram.com/pablogaston96/" target="_blank">
+                <li class="instagram iconos">
+                    <img src="/insta.png" alt="logo instagram" width="40px">
+                </li>
+            </a>
+            <a href="https://www.linkedin.com/in/pablo-gast%C3%B3n-medina-877173211/" target="_blank">
+                <li class="likedin iconos">
+                    <img src="/Linkedin.png" alt="logo linkedin" width="40px">
+                </li>
+            </a>
+        </div>
+   </footer>
+
+   
+   <script src="/horca.js"></script>
+   <script src="/juego.js"></script>
+</body>
+</html>
